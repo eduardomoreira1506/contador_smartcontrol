@@ -1,0 +1,304 @@
+/*
+
+Theme Name: Amanda Karoline
+Theme URI: http://amandakaroline.com.br
+Author: HC Desenvolvimentos
+Author URI: http://hcdesenvolvimentos.com.br;
+Description: Descrção do thema.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: amandakaroline
+Tags: Modelo, Maquiagem, Fotos, Portfólio, Preto.
+
+--------------------------------------------
+ESTRUTURAÇÃO BASE (Palupa Framework v1)
+--------------------------------------------
+*** BODY
+**** TOPO
+**** RODAPÉ
+**** COPYRIGHT
+**** ESTILOS GERAIS PARA AS PÁGINAS
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+font-family: 'K2D', sans-serif;
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+  body{
+    width: 100%;
+  }
+  body:after{
+    content: "";
+    width: 100%;
+    height: 111vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+/* TOPO */
+  .topo{
+
+  }
+  header{
+
+  }
+
+/*RODAPÉ*/
+  .rodape{
+
+  }
+  footer{
+
+  }
+
+/*COPYRIGHT*/
+  .copyright{
+
+  }
+
+/*PG*/
+  .pg{
+
+  }
+
+/*PÁGINA INICIAL*/
+  .conteudoGeral{
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background: rgba(0, 0, 0, 0.6588235294117647);
+    height: 100vh;
+    width: 100%;
+  }
+    .conteudoGeral .textosInicial{
+      
+    }
+      .conteudoGeral .textosInicial h3{
+        margin: 0;
+        font-size: 80px;
+        padding-top: 90px;
+      }
+      .conteudoGeral .textosInicial h4{
+        font-size: 75px;
+        font-weight: 800;
+      }
+    .conteudoGeral .contador{
+      margin: 180px 0;
+      position: relative;
+      text-align: center;
+    }
+    .conteudoGeral .contador:before{
+      content: "Contagem regressiva";
+      font-family: 'Raleway', sans-serif;
+      font-size: 34px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      left: 0;
+    }
+      .conteudoGeral .contador h3{
+        font-family: 'K2D', sans-serif;
+        display: inline-block;
+        margin-top: 70px;
+        margin: 70px 30px 0;
+        font-size: 49px;
+        background: #000;
+        padding: 37px;
+        width: 100%;
+        max-width: 150px;
+        position: relative;
+      }
+      .conteudoGeral .contador h3:after{
+        content: "Dias";
+        display: block;
+        width: 100%;
+        max-width: 150px;
+        text-transform: lowercase;
+        font-size: 23px;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .conteudoGeral .contador h3#dias:after{
+        content: "dias";
+      }
+      .conteudoGeral .contador h3#horas:after{
+        content: "horas";
+      }
+      .conteudoGeral .contador h3#minutos:after{
+        content: "minutos";
+      }
+      .conteudoGeral .contador h3#segundos:after{
+        content: "segundos";
+      }
+      .conteudoGeral .contador h3#milisegundos:after{
+        content: "milésimos";
+      }
+      .conteudoGeral .redesSociais{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+      }
+        .conteudoGeral .redesSociais a{
+          display: inline-block;
+          color: #fff;
+          font-size: 70px;
+          text-align: center;
+          margin: 0 50px;
+          text-decoration: none;
+        }
+          .conteudoGeral .redesSociais a i{
+            
+          }
+
+  .carrosselImagens{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+    .carrosselImagens .imagem1{
+      height: 100vh;
+      background: url('../img/imagem1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .carrosselImagens .imagem2{
+      height: 100vh;
+      background: url('../img/imagem2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .carrosselImagens .imagem3{
+      height: 100vh;
+      background: url('../img/imagem3.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .carrosselImagens .imagem4{
+      height: 100vh;
+      background: url('../img/imagem4.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .carrosselImagens .imagem5{
+      height: 100vh;
+      background: url('../img/imagem5.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+/*EXTRAS*/
+  body::-webkit-scrollbar{ background: rgba(0, 0, 0, 0.6588235294117647);width: 10px;}
+  body::-webkit-scrollbar-button{ background: #000;}
+  body::-webkit-scrollbar-track{}
+  body::-webkit-scrollbar-track-piece {}
+  body::-webkit-scrollbar-thumb{ background: #000;}
+  body::-webkit-scrollbar-corner {}
+  body::-webkit-resizer{}
+
+/*@MEDIA QUERY*/
+  @media(max-width: 1406px){
+    .conteudoGeral .textosInicial h3{
+      font-size: 70px;
+    }
+    .conteudoGeral .textosInicial h4{
+      font-size: 50px;
+    }
+  }
+  @media(max-width: 1066px){
+    .conteudoGeral .textosInicial h3{
+      font-size: 65px;
+      padding: 34px 10px 0 10px;
+    }
+    .conteudoGeral .contador{
+      margin: 75px 0 0 0;
+    }
+  }
+
+  @media(max-width: 991px){
+  
+  }
+  @media(max-width: 768px){
+    .conteudoGeral .contador h3 {
+      font-size: 24px;
+      max-width: 100px;
+    }
+    .conteudoGeral .redesSociais a {
+      display: inline-block;
+      color: #fff;
+      font-size: 40px;
+      text-align: center;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .conteudoGeral .contador h3:after{
+      font-size: 20px;
+    }
+    .conteudoGeral .contador {
+      margin: 90px 0;
+    }
+    .conteudoGeral .textosInicial h3 {
+      font-size: 60px;
+    }
+    .conteudoGeral .contador:before {
+      font-size: 28px;
+    }
+  }
+  @media(max-width: 500px){
+    .conteudoGeral .textosInicial h3{
+      font-size: 40px;
+    }
+    .conteudoGeral .textosInicial h4{
+      font-size: 30px;
+      padding: 0 10px 0 10px;
+    }
+    .conteudoGeral .contador{
+      margin: 50px 0;
+    }
+  }
+
+  @media(max-width: 445px){
+    .conteudoGeral .textosInicial h3 {
+      padding: 14px 0 0 0;
+      font-size: 24px;
+    }
+    .conteudoGeral .textosInicial h4 {
+      font-size: 26px;
+    }
+    .conteudoGeral .contador:before {
+      font-size: 21px;
+      top: -40px;
+    }
+    .conteudoGeral .contador h3 {
+      padding: 27px;
+      display: block;
+      margin: 10px auto 40px;
+    }
+    .conteudoGeral .redesSociais a {
+      font-size: 29px;
+    }
+
+    .conteudoGeral .contador h3:after{
+      font-size: 15px;
+    }
+  }
+
+  @media(max-width: 320px){
+  
+  }
